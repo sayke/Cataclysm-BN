@@ -8,220 +8,220 @@
     "monsters": [
       {
         "monster": "mon_gallimimus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 0,
         "pack_size": [ 4, 8 ],
         "conditions": [ "DUSK", "DAWN", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_kosmoceratops",
-        "freq": 21,
+        "freq": 7,
         "cost_multiplier": 25,
         "pack_size": [ 4, 9 ],
         "conditions": [ "DUSK", "DAWN", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_eoraptor",
-        "freq": 3,
+        "freq": 1,
         "cost_multiplier": 0,
         "pack_size": [ 4, 8 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_amargasaurus",
-        "freq": 12,
+        "freq": 4,
         "cost_multiplier": 25,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_apatosaurus",
-        "freq": 7,
+        "freq": 2,
         "cost_multiplier": 25,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT" ]
       },
       {
         "monster": "mon_apatosaurus_juvenile",
-        "freq": 5,
+        "freq": 3,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_brontosaurus",
-        "freq": 7,
+        "freq": 2,
         "cost_multiplier": 25,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT" ]
       },
       {
         "monster": "mon_brontosaurus_juvenile",
-        "freq": 5,
+        "freq": 2,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_diplodocus",
-        "freq": 7,
+        "freq": 2,
         "cost_multiplier": 20,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT" ]
       },
       {
         "monster": "mon_diplodocus_juvenile",
-        "freq": 5,
+        "freq": 3,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_camarasaurus",
-        "freq": 7,
+        "freq": 3,
         "cost_multiplier": 25,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT" ]
       },
       {
         "monster": "mon_camarasaurus_juvenile",
-        "freq": 5,
+        "freq": 2,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_brachiosaurus",
-        "freq": 7,
+        "freq": 3,
         "cost_multiplier": 25,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT" ]
       },
       {
         "monster": "mon_brachiosaurus_juvenile",
-        "freq": 5,
+        "freq": 2,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_alamosaurus",
-        "freq": 7,
+        "freq": 3,
         "cost_multiplier": 25,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT" ]
       },
       {
         "monster": "mon_alamosaurus_juvenile",
-        "freq": 5,
+        "freq": 2,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_scutellosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 0,
         "pack_size": [ 2, 4 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_stegosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 20,
         "pack_size": [ 2, 4 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_dyoplosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 20,
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_ankylosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 20,
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_nodosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 20,
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_edmontonia",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 20,
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_camptosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 0,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_maiasaura",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_parasaurolophus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_corythosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_edmontosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 10,
         "pack_size": [ 4, 12 ],
         "conditions": [ "NIGHT", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_pachycephalosaurus",
-        "freq": 10,
+        "freq": 7,
         "cost_multiplier": 0,
         "pack_size": [ 1, 2 ],
         "conditions": [ "DUSK", "DAWN", "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_pachyrhinosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 20,
         "pack_size": [ 1, 2 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_pentaceratops",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 25,
         "pack_size": [ 1, 2 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_torosaurus",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 25,
         "pack_size": [ 1, 2 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]
       },
       {
         "monster": "mon_triceratops",
-        "freq": 20,
+        "freq": 7,
         "cost_multiplier": 30,
         "pack_size": [ 1, 2 ],
         "conditions": [ "SPRING", "SUMMER", "AUTUMN" ]

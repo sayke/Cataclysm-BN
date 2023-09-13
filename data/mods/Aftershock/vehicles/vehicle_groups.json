@@ -17,10 +17,10 @@
       [ "afs_electric_semi", 300 ],
       [ "afs_gas_tanker", 300 ],
       [ "afs_water_tanker", 250 ],
-      [ "car_atomic", 1000 ],
-      [ "car_sports_atomic", 100 ],
-      [ "suv_atomic", 1000 ],
-      [ "compact_atomic", 300 ]
+      [ "car_atomic", 25 ],
+      [ "car_sports_atomic", 25 ],
+      [ "suv_atomic", 25 ],
+      [ "compact_atomic", 25 ]
     ]
   },
   {
@@ -62,17 +62,17 @@
   {
     "id": "city_vehicles",
     "type": "vehicle_group",
-    "vehicles": [ [ "car_atomic", 1000 ], [ "suv_atomic", 1000 ], [ "compact_atomic", 500 ] ]
+    "vehicles": [ [ "car_atomic", 25 ], [ "suv_atomic", 25 ], [ "25", 500 ] ]
   },
   {
     "id": "city_pileup",
     "type": "vehicle_group",
-    "vehicles": [ [ "car_atomic", 1000 ], [ "suv_atomic", 1000 ], [ "compact_atomic", 300 ] ]
+    "vehicles": [ [ "car_atomic", 25 ], [ "suv_atomic", 25 ], [ "compact_atomic", 25 ] ]
   },
   {
     "id": "highway",
     "type": "vehicle_group",
-    "vehicles": [ [ "car_atomic", 1500 ], [ "suv_atomic", 1500 ], [ "compact_atomic", 300 ] ]
+    "vehicles": [ [ "car_atomic", 25 ], [ "suv_atomic", 25 ], [ "compact_atomic", 25 ] ]
   },
   {
     "type": "vehicle_group",

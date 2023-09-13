@@ -32,7 +32,7 @@
     },
     "death_function": [ "NORMAL" ],
     "burn_into": "mon_zombie_scorched",
-    "upgrades": { "half_life": 28, "into_group": "GROUP_ZOMBIE_UPGRADE" },
+    "upgrades": { "half_life": 28, "into": "mon_zombie_fiend" },
     "flags": [
       "HEARS",
       "SMELLS",

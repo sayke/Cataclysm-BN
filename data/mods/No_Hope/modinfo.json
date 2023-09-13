@@ -9,10 +9,5 @@
     "category": "content",
     "dependencies": [ "bn" ],
     "version": "3.0"
-  },
-  {
-    "type": "monster_adjustment",
-    "species": "ZOMBIE",
-    "flag": { "name": "REVIVES", "value": false }
   }
 ]

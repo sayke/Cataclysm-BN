@@ -1,0 +1,331 @@
+	CATACLYSM: BRIGHT NIGHTS NOTES
+
+- https://cbn-guide.mythoscraft.org/
+
+- Add basic railroad network generation and mod to enable it - https://github.com/CleverRaven/Cataclysm-DDA/pull/67713
+
+make clean && make NATIVE=osx RELEASE=1 TILES=1 SOUND=1 CLANG=1 LTO=1 CCACHE=1 AUTO_BUILD_PREFIX=1 USE_HOME_DIR=1 RUNTESTS=0
+
+ln -s ~/projects/JoergSpraves-inventions-mod ./JoergSpraves-inventions-mod
+
+ln -s ~/projects/BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/High-Maintenance-Huge-Mods/Survivors_Lost_item ./Survivors_Lost_item
+
+ln -s ~/projects/BrightNights-Structured-Kenan-Modpack/Kenan-BrightNights-Structured-Modpack/Medium-Maintenance-Small-Mods/Survivors_Lost_item ./Survivors_Lost_item
+
+ln -s ~/Library/Application\ Support/Cataclysm/mods/MST_Extra_Mod/MST_Extra_BN ./MST_Extra_BN
+
+~/Library/Application\ Support/Cataclysm/mods/cdda-tankmod-revived-mod
+
+git branch synch_mod_mapgen
+git checkout synch_mod_mapgen
+git push origin synch_mod_mapgen
+
+	TODO
+FIXED - Tests didn't work but building RUNTESTS=0 did
+DONE - Tweak StatsThroughSkills
+DONE - Evaluate other overmap specials to make sure they aren't mandatory 
+DONE - No minefields on bridges?
+DONE - Way too many groves and shrubbery (mx_grove, mx_shrubbery in forest_mapgen_settings)
+DONE - Way too many good electric vehicles are spawning on bridges
+DONE - Make sure strays and bl9 cultists aren't spawning into cities next to zombies
+DONE - Integrate beekeeper upgrades
+- Install Jorg Sprave Inventions mod
+- Update Magiclysm (BN branch is far behind DDA one)
+	- Left off on biomancer spells
+- Decrease spawn rate of military stuff and stuff on rural/highway roads in No Hope?
+- Reduce spawn rate of vertibird crash sites
+- Give deathclaws, geckos, and other fallout creatures a reasonable max vision range, and reduce their frequency
+- Mods to add still
+	- M_Blazemod_Extension (if we can get it working)
+	? Magic ammunition mod?
+- Make sure these buildings are actually generating in towns - increase their weight maybe?
+	bandit_tower
+	refugee_tower
+	tri_tower
+
+----- FIXED
+
+ DEBUG    : Error: Json error: data/mods/Magiclysm/bionics.json:11:13: Expected number
+
+    "fuel_efficiency": 0.6,
+    "exothermic_power_gen": true,
+    "time": "
+            ^
+             6 s",
+    "flags": [ "BIONIC_TOGGLED", "BIONIC_POWER_SOURCE" ],
+    "passive_pseudo_items": [ "integrated_blood_bank" ]
+
+
+ FUNCTION : bool main_menu::new_character_tab()
+ FILE     : src/main_menu.cpp
+ LINE     : 894
+ VERSION  : BN 9f269664d1
+
+ ----- FIXED
+
+ DEBUG    : Error: Json error: data/mods/Magiclysm/eoc_caster_level_boosts.json:3:12: unrecognized JSON object
+
+[
+  {
+    "type":
+           ^
+            "jmath_function",
+    "id": "limit_caster_level_boost",
+    "num_args": 2,
+
+
+ FUNCTION : bool main_menu::new_character_tab()
+ FILE     : src/main_menu.cpp
+ LINE     : 894
+ VERSION  : BN 9f269664d1
+
+ ----- FIXED
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/field.json:81:32: Invalid or misplaced field name "flags" in JSON data
+
+    ],
+    "description_affix": "covered_in",
+    "immunity_data": { "flags":
+                               ^
+                                [ "ALKAHEST_IMMUNE" ] },
+    "underwater_age_speedup": "8 h",
+    "priority": 2,
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+-----
+
+ DEBUG    : Could not find an iexamine function matching 'attunement_altar'!
+
+ FUNCTION : iexamine_function iexamine_function_from_string(const std::string &)
+ FILE     : src/iexamine.cpp
+ LINE     : 6393
+ VERSION  : BN 9f269664d1
+
+ ----- FIXED
+
+  DEBUG    : Error: Json error: data/mods/Magiclysm/materials.json:5:27: missing mandatory member "bash_resist"
+
+    "type": "material",
+    "id": "arcane_skin",
+    "name": "Arcane Skin",
+                          ^
+    "density": 38,
+    "specific_heat_liquid": 0.82,
+    "specific_heat_solid": 0.45,
+
+
+ FUNCTION : bool main_menu::new_character_tab()
+ FILE     : src/main_menu.cpp
+ LINE     : 894
+ VERSION  : BN 9f269664d1
+
+    "chip_resist": 15,
+    "breathability": "SECOND_SKIN",
+    "dmg_adj": [ "scratched", "cut", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+    "cut_dmg_verb": "sliced"
+    "cut_dmg_verb": "sliced",
+    "resist": { "bash": 14, "cut": 18, "acid": 4, "heat": 20, "bullet": 14, "electric": 2 }
+  },
+
+----- FIXED
+
+ DEBUG    : Error: Json error: data/mods/Magiclysm/field.json:81:42: expected pair separator ':', not '}'
+
+    ],
+    "description_affix": "covered_in",
+    "immunity_data": { "ALKAHEST_IMMUNE" }
+                                         ^
+                                          ,
+    "underwater_age_speedup": "8 h",
+    "priority": 2,
+
+
+ FUNCTION : bool main_menu::new_character_tab()
+ FILE     : src/main_menu.cpp
+ LINE     : 894
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/materials.json:19:21: Invalid or misplaced field name "breathability" in JSON data
+
+    "elec_resist": 2,
+    "chip_resist": 15,
+    "breathability":
+                    ^
+                     "SECOND_SKIN",
+    "dmg_adj": [ "scratched", "cut", "shredded", "tattered" ],
+    "bash_dmg_verb": "ripped",
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/migration_and_obsoletion.json:59:13: Invalid or misplaced field name "shape" in JSON data
+
+    "effect": "summon",
+    "effect_str": "mon_zougar",
+    "shape":
+            ^
+             "blast",
+    "energy_source": "HP",
+    "base_energy_cost": 30,
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/modinfo.json:17:17: Invalid or misplaced field name "sort_rank" in JSON data
+
+    "name": "spellcraft",
+    "display_category": "display_ranged",
+    "sort_rank":
+                ^
+                 14500,
+    "description": "Your skill in the arcane.  Represents magic theory and all that entails.  A higher skill increases how quickly you can learn spells, and decreases their spell failure chance.  You learn this skill by studying book
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+  DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/monster_attacks.json:36:13: Invalid or misplaced field name "shape" in JSON data
+
+    "description": "Create a giant explosion with spark field.  You can see it only in debug mode.",
+    "effect": "attack",
+    "shape":
+            ^
+             "blast",
+    "valid_targets": [ "hostile", "ground" ],
+    "flags": [ "RANDOM_AOE", "RANDOM_DAMAGE" ],
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/monster_attacks.json:68:17: Invalid or misplaced field name "dodgeable" in JSON data
+
+    "no_dmg_msg_u": "%1$s lashes you with its flaming whip, but fails to penetrate your armor!",
+    "no_dmg_msg_npc": "%1$s lashes <npcname> with its flaming whip, but fails to penetrate their armor!",
+    "dodgeable":
+                ^
+                 true,
+    "no_adjacent": true
+  },
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+-----
+
+ DEBUG    : ERROR: spell electric_turret_line has invalid effect attack
+
+ FUNCTION : void spell_type::load(const JsonObject &, const std::string &)
+ FILE     : src/magic.cpp
+ LINE     : 258
+ VERSION  : BN 9f269664d1
+
+-----
+
+ DEBUG    : ERROR: Invalid damage type string.  Defaulting to none
+
+ FUNCTION : damage_type damage_type_from_string(const std::string &)
+ FILE     : src/magic.cpp
+ LINE     : 195
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+ DEBUG    : Error: Json error: data/mods/Magiclysm/monstergroups.json:6:60: missing required field "freq" in object: { "monster": "mon_null", "weight": 920 } 
+
+    "name": "GROUP_NULL",
+    "is_safe": true,
+    "monsters": [ { "monster": "mon_null", "weight": 920 } ]
+                                                           ^
+
+  },
+  {
+
+
+ FUNCTION : bool main_menu::new_character_tab()
+ FILE     : src/main_menu.cpp
+ LINE     : 894
+ VERSION  : BN 9f269664d1
+
+----- FIXED
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/recipes.json:4:22: Invalid or misplaced field name "activity_level" in JSON data
+
+  {
+    "type": "recipe",
+    "activity_level":
+                     ^
+                      "MODERATE_EXERCISE",
+    "result": "egg_owlbear",
+    "category": "CC_FOOD",
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1
+
+
+-----
+ DEBUG    : Species MAGICAL_BEAST lacks a name field, will default to id string.
+
+ FUNCTION : void species_type::load(const JsonObject &, const std::string &)
+ FILE     : src/monstergenerator.cpp
+ LINE     : 954
+ VERSION  : BN 9f269664d1
+
+
+----- 
+
+ DEBUG    : (json-error)
+Json error: data/mods/Magiclysm/techniques.json:16:22: Invalid or misplaced field name "attack_vectors" in JSON data
+
+    ],
+    "description": "Cut damage multiply by 2, crit only",
+    "attack_vectors":
+                     ^
+                      [ "WEAPON" ]
+  }
+]
+
+
+ FUNCTION : void JsonObject::report_unvisited() const
+ FILE     : src/json.cpp
+ LINE     : 125
+ VERSION  : BN 9f269664d1

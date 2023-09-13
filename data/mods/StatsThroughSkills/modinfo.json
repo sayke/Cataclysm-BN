@@ -12,28 +12,28 @@
     "type": "skill_boost",
     "stat": "str",
     "skills": [ "mechanics", "swimming", "bashing", "cutting", "melee", "throw" ],
-    "skill_offset": -3,
-    "scaling_power": 0.4
+    "skill_offset": -9,
+    "scaling_power": 0.2
   },
   {
     "type": "skill_boost",
     "stat": "dex",
     "skills": [ "driving", "survival", "tailor", "traps", "dodge", "stabbing", "unarmed" ],
-    "skill_offset": -3,
-    "scaling_power": 0.4
+    "skill_offset": -9,
+    "scaling_power": 0.2
   },
   {
     "type": "skill_boost",
     "stat": "int",
-    "skills": [ "barter", "computer", "cooking", "electronics", "fabrication", "firstaid", "speech" ],
-    "skill_offset": -3,
-    "scaling_power": 0.4
+    "skills": [ "barter", "computer", "cooking", "electronics", "fabrication", "firstaid", "speech", "arcana", "spellcraft" ],
+    "skill_offset": -9,
+    "scaling_power": 0.2
   },
   {
     "type": "skill_boost",
     "stat": "per",
     "skills": [ "archery", "gun", "launcher", "pistol", "rifle", "shotgun", "smg" ],
-    "skill_offset": -3,
-    "scaling_power": 0.4
+    "skill_offset": -9,
+    "scaling_power": 0.2
   }
 ]

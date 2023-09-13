@@ -60,14 +60,14 @@
     "name": "PLAYER_HEALING_RATE",
     "info": "Set base player healing rate per turn. Default: 0.0001",
     "stype": "float",
-    "value": 0.0001
+    "value": 0.00003
   },
   {
     "type": "EXTERNAL_OPTION",
     "name": "NPC_HEALING_RATE",
     "info": "Set base NPC healing rate per turn. Default: 0.0001",
     "stype": "float",
-    "value": 0.0001
+    "value": 0.00003
   },
   {
     "type": "EXTERNAL_OPTION",
@@ -109,7 +109,7 @@
     "name": "NO_NPC_FOOD",
     "info": "Disables tracking food, thirst and ( partially ) fatigue for NPCs. If true, NPCs won't need to eat or drink and will only get tired enough to sleep, not to get penalties.",
     "stype": "bool",
-    "value": false
+    "value": true
   },
   {
     "type": "EXTERNAL_OPTION",

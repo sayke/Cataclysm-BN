@@ -370,7 +370,7 @@
     },
     "map_extras": {
       "forest": {
-        "chance": 20,
+        "chance": 3,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 8,
@@ -384,6 +384,7 @@
           "mx_grass": 20,
           "mx_fallen_shed": 30,
           "mx_spider": 200,
+          "mx_jabberwock": 1,
           "mx_grove": 500,
           "mx_shrubbery": 500,
           "mx_clearcut": 125,
@@ -400,7 +401,7 @@
         }
       },
       "forest_thick": {
-        "chance": 20,
+        "chance": 5,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 8,
@@ -432,7 +433,7 @@
         }
       },
       "forest_water": {
-        "chance": 20,
+        "chance": 10,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 8,
@@ -463,7 +464,7 @@
         }
       },
       "field": {
-        "chance": 6,
+        "chance": 2,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 2,
@@ -513,7 +514,7 @@
           "mx_bandits_ambush": 10
         }
       },
-      "bridgehead_ground": { "chance": 5, "extras": { "mx_minefield": 100 } },
+      "bridgehead_ground": { "chance": 5, "extras": { "mx_minefield": 400 } },
       "road_nesw_manhole": { "chance": 20, "extras": { "mx_city_trap": 100 } },
       "build": {
         "chance": 90,
@@ -608,6 +609,31 @@
       "park_sigma": 80,
       "houses": {
         "2storyModern01": 5,
+        "2storyModern02": 50,
+        "2StoryModern03": 50,
+        "2StoryModern04": 50,
+        "bungalow01": 50,
+        "bungalow02": 50,
+        "bungalow03": 50,
+        "bungalow04": 50,
+        "bungalow05": 50,
+        "bungalow06": 50,
+        "bungalow07": 50,
+        "bungalow08": 50,
+        "bungalow09": 50,
+        "bungalow10": 50,
+        "bungalow11": 50,
+        "bungalow12": 50,
+        "bungalow13": 50,
+        "bungalow14": 50,
+        "bungalow15": 50,
+        "bungalow16": 50,
+        "bungalow17": 50,
+        "bungalow18": 50,
+        "bungalow19": 50,
+        "bungalow20": 50,
+        "bungalow21": 50,
+        "bungalow22": 50,
         "house_w_1": 50,
         "house_two_story_basement": 50,
         "house_crack1": 5,
@@ -667,6 +693,7 @@
         "house_30": 50,
         "house_31": 50,
         "house_32": 50,
+        "house_33": 50,
         "house_garage": 50,
         "house_garage2": 50,
         "house_garage3": 50,
@@ -750,6 +777,7 @@
       "shops": {
         "bus_station": 200,
         "city_block_2": 300,
+        "abandoned_textile_mill": 100,
         "urban_13_dense_house_apt_house": 300,
         "urban_14_dense_house_mart_food": 200,
         "town_hall": 150,
@@ -806,6 +834,7 @@
         "bar_1": 400,
         "s_electronics": 400,
         "s_electronics_1": 400,
+        "s_electronics_2": 200,
         "pawn": 300,
         "pawn_1": 300,
         "pawn_pf": 50,
@@ -942,12 +971,17 @@
       }
     },
     "weather": {
+      "spring_temp": 9,
+      "summer_temp": 16,
+      "autumn_temp": 7,
+      "winter_temp": -14,
       "base_temperature": 1.5,
       "base_humidity": 70.0,
       "base_pressure": 1015.0,
       "base_wind": 3.4,
       "base_wind_distrib_peaks": 80,
       "base_wind_season_variation": 50,
+      "base_acid": 0.5,
       "weather_types": [
         "clear",
         "sunny",
@@ -957,6 +991,8 @@
         "rain",
         "thunder",
         "lightning",
+        "acid_drizzle",
+        "acid_rain",
         "flurries",
         "snowing",
         "snowstorm"

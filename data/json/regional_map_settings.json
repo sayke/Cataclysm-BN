@@ -368,7 +368,7 @@
     },
     "map_extras": {
       "forest": {
-        "chance": 20,
+        "chance": 2,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 8,
@@ -382,20 +382,20 @@
           "mx_grass": 20,
           "mx_fallen_shed": 30,
           "mx_spider": 200,
-          "mx_grove": 500,
+          "mx_grove": 200,
           "mx_shrubbery": 500,
           "mx_clearcut": 125,
           "mx_pond": 125,
           "mx_clay_deposit": 125,
-          "mx_point_dead_vegetation": 500,
-          "mx_point_burned_ground": 500,
+          "mx_point_dead_vegetation": 200,
+          "mx_point_burned_ground": 200,
           "mx_casings": 30,
           "mx_corpses": 30,
           "mx_mass_grave": 5
         }
       },
       "forest_thick": {
-        "chance": 20,
+        "chance": 5,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 8,
@@ -408,22 +408,22 @@
           "mx_portal_in": 3,
           "mx_grass": 10,
           "mx_fallen_shed": 20,
-          "mx_spider": 200,
+          "mx_spider": 100,
           "mx_jabberwock": 1,
           "mx_grove": 500,
-          "mx_shrubbery": 500,
+          "mx_shrubbery": 100,
           "mx_clearcut": 125,
           "mx_pond": 125,
           "mx_clay_deposit": 125,
-          "mx_point_dead_vegetation": 500,
-          "mx_point_burned_ground": 500,
+          "mx_point_dead_vegetation": 100,
+          "mx_point_burned_ground": 100,
           "mx_casings": 30,
           "mx_corpses": 30,
           "mx_mass_grave": 5
         }
       },
       "forest_water": {
-        "chance": 20,
+        "chance": 10,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 8,
@@ -437,13 +437,13 @@
           "mx_grass": 20,
           "mx_fallen_shed": 60,
           "mx_spider": 200,
-          "mx_grove": 500,
-          "mx_shrubbery": 500,
+          "mx_grove": 100,
+          "mx_shrubbery": 100,
           "mx_clearcut": 125,
           "mx_pond": 125,
           "mx_clay_deposit": 125,
-          "mx_point_dead_vegetation": 500,
-          "mx_point_burned_ground": 500,
+          "mx_point_dead_vegetation": 100,
+          "mx_point_burned_ground": 100,
           "mx_casings": 30,
           "mx_corpses": 30,
           "mx_nest_dermatik": 10,
@@ -451,7 +451,7 @@
         }
       },
       "field": {
-        "chance": 6,
+        "chance": 2,
         "extras": {
           "mx_helicopter": 1,
           "mx_military": 2,
@@ -496,7 +496,7 @@
           "mx_prison_bus": 15
         }
       },
-      "bridgehead_ground": { "chance": 5, "extras": { "mx_minefield": 100 } },
+      "bridgehead_ground": { "chance": 100, "extras": { "mx_minefield": 500 } },
       "build": {
         "chance": 90,
         "extras": {
@@ -518,7 +518,14 @@
       "marloss": { "chance": 20, "extras": { "mx_marloss_pilgrimage": 100 } },
       "subway": {
         "chance": 75,
-        "extras": { "mx_military": 5, "mx_science": 12, "mx_collegekids": 15, "mx_portal": 7, "mx_portal_in": 3, "mx_casings": 30 }
+        "extras": { 
+          "mx_military": 5, 
+          "mx_science": 12, 
+          "mx_collegekids": 15, 
+          "mx_portal": 7, 
+          "mx_portal_in": 3, 
+          "mx_casings": 30 
+        }
       },
       "research_facility_lot": {
         "chance": 3,
@@ -941,13 +948,13 @@
       }
     },
     "weather": {
-      "spring_temp": 8,
+      "spring_temp": 9,
       "summer_temp": 16,
       "autumn_temp": 7,
       "winter_temp": -14,
       "base_humidity": 70.0,
       "base_pressure": 1015.0,
-      "base_acid": 0.0,
+      "base_acid": 0.5,
       "base_wind": 3.4,
       "base_wind_distrib_peaks": 80,
       "base_wind_season_variation": 50,

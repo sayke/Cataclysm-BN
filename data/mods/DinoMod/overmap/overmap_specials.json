@@ -10,7 +10,7 @@
     "locations": [ "wilderness" ],
     "city_distance": [ 10, -1 ],
     "city_sizes": [ 0, 20 ],
-    "occurrences": [ 0, 2 ],
+    "occurrences": [ 0, 1 ],
     "flags": [ "CLASSIC", "WILDERNESS", "ELECTRIC_GRID" ],
     "rotate": false
   },
@@ -60,7 +60,7 @@
     "connections": [ { "point": [ 2, 0, 0 ], "connection": "local_road", "from": [ 2, 1, 0 ] } ],
     "locations": [ "wilderness" ],
     "city_distance": [ 10, -1 ],
-    "occurrences": [ 30, 100 ],
+    "occurrences": [ 0, 1 ],
     "flags": [ "LAB", "UNIQUE", "ELECTRIC_GRID" ],
     "rotate": false
   }

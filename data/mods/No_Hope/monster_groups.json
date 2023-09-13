@@ -35,9 +35,9 @@
     "type": "monstergroup",
     "name": "GROUP_MIL_STRONG",
     "monsters": [
-      { "monster": "mon_tripod", "freq": 5, "cost_multiplier": 0 },
-      { "monster": "mon_chickenbot", "freq": 5, "cost_multiplier": 0 },
-      { "monster": "mon_tankbot", "freq": 5, "cost_multiplier": 0 }
+      { "monster": "mon_tripod", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_chickenbot", "freq": 10, "cost_multiplier": 0 },
+      { "monster": "mon_tankbot", "freq": 10, "cost_multiplier": 0 }
     ]
   }
 ]
